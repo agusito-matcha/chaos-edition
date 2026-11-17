@@ -1,0 +1,16 @@
+{
+  "name": "chaos-edition",
+  "version": "1.0.0",
+  "description": "CHAOS EDITION: videojuego de cartas multijugador online (gatitos, bombas y mucho caos).",
+  "private": true,
+  "license": "SEE LICENSE IN LICENCIAS.md",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test test/motor.test.js test/red.test.js test/mqtt.test.js",
+    "build:un-solo-archivo": "node build/un-solo-archivo.js"
+  },
+  "dependencies": {}
+}

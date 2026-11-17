@@ -1,0 +1,9 @@
+# Configuración de Render (opcional: permite crear el servicio con "New > Blueprint").
+services:
+  - type: web
+    name: chaos-edition
+    runtime: node
+    plan: free
+    buildCommand: echo "No hay nada que compilar"
+    startCommand: node server/index.js
+    healthCheckPath: /salud

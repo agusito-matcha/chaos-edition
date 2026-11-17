@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CHAOS EDITION · Gatitos, bombas y muchísimo caos</title>
+<meta name="description" content="CHAOS EDITION: videojuego de cartas multijugador online con gatitos explosivos. Juega con tus amigos desde el navegador.">
+<meta name="theme-color" content="#57351F">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<div id="mundo">
+  <div id="fondo" aria-hidden="true">
+    <svg class="blob b1" style="--p:14" viewBox="0 0 200 200"><path d="M44 28C78 2 140 8 168 46c28 38 18 96-14 128-34 34-98 30-126-6C0 130 10 54 44 28Z" fill="#FFF9F0"/></svg>
+    <svg class="blob b2" style="--p:30" viewBox="0 0 200 200"><path d="M30 60C50 10 120 0 160 34c38 32 40 92 4 128-34 34-96 30-128-4C8 130 12 94 30 60Z" fill="#F47B35"/></svg>
+    <svg class="blob b3" style="--p:20" viewBox="0 0 200 200"><path d="M60 14c40-18 100 4 120 48 20 46-4 100-52 122-44 20-104 2-120-46C-6 94 20 34 60 14Z" fill="#57351F"/></svg>
+    <svg class="blob b4" style="--p:40" viewBox="0 0 200 200"><path d="M24 80C26 30 90 4 140 24c46 18 64 74 36 118-26 42-92 52-128 18C28 142 22 112 24 80Z" fill="#F3DFC0"/></svg>
+    <svg class="blob b5" style="--p:10" viewBox="0 0 200 200"><path d="M40 30c46-22 110 0 128 50 16 44-14 94-60 108-48 14-100-12-108-62C-4 80 8 46 40 30Z" fill="#D85D24"/></svg>
+  </div>
+  <main id="app"></main>
+</div>
+<div id="capa-fx" aria-hidden="true"><canvas id="lienzo"></canvas><div id="escena"></div></div>
+<div id="avisos"></div>
+<div id="modales"></div>
+<div id="controles">
+  <button id="btn-sonido" class="btn btn-icono" type="button" aria-label="Silenciar">🔊</button>
+  <button id="btn-ajustes" class="btn btn-icono" type="button" aria-label="Ajustes">⚙️</button>
+  <button id="btn-ayuda" class="btn btn-icono" type="button" aria-label="Cómo se juega">❓</button>
+</div>
+<div id="reconectando" role="alert"><div><b>Se ha perdido la conexión</b><span>Reconectando… tu sitio en la partida está guardado.</span></div></div>
+<div id="carga" role="status"><div class="carga-caja"><div class="carga-bomba">💥</div><div class="carga-titulo">CHAOS EDITION</div><div id="carga-texto">Encendiendo mechas…</div><div class="carga-barra"><i></i></div></div></div>
+<noscript><p style="position:fixed;inset:0;background:#57351F;color:#FFF9F0;padding:2rem;font:700 1.2rem sans-serif;z-index:99">CHAOS EDITION necesita JavaScript. Actívalo en tu navegador y vuelve a cargar la página.</p></noscript>
+<script src="config.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
